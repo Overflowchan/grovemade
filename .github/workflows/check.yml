@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: checkout code
         uses: actions/checkout@v4
+      - name: Install packages
+        run: npm ci
       - name: build procjekt
         run: npm run build
         
